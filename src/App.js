@@ -1,5 +1,5 @@
 import React from 'react';
-// import './App.css';
+import './App.css';
 
 
 import DoggoCard from './Components/DoggoCard.js';
@@ -21,14 +21,11 @@ class App extends React.Component {
     });
   }
 
-  handleSubmit
   
   render() {
     return(
-      <div>
+      <div className='app'>
         <DoggoCard key={this.state.breeds.id} breeds = {this.state.breeds} />
-        {/* <button onClick={this.state.breeds}>Get A New Doggo!</button> */}
-
       </div>
     )
   }
